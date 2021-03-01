@@ -103,8 +103,12 @@ theme: maupassant
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: "git"
+  repo: git@github.com:law-chain-hot/law-chain-hot.github.io.git
+  branch: master
 
+
+# DIY
 # Archer theme
 jsonContent:
   meta: true
