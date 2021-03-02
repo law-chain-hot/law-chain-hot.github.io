@@ -3,12 +3,13 @@ title: 2020年4月 | 记阿里淘系 intern offer 后的小总结
 date: "2020-11-7"
 description: "我是如何从零基础到淘系前端offer --- 阶段性总结"
 toc: true
-# layout: page
+tags: 
+category:
 ---
 
 > 原标题 《我是如何从零基础到淘系前端offer --- 阶段性总结》
 
-![image1](https://user-images.githubusercontent.com/57960778/80261595-7bc16900-8650-11ea-9cf8-c0ad9e8c7d43.png)
+![](https://user-images.githubusercontent.com/57960778/80261595-7bc16900-8650-11ea-9cf8-c0ad9e8c7d43.png)
 
 # 零、 这篇文章是什么
 这是我阶段性总结，写这篇文章有 2 个目的：
