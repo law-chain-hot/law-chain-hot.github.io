@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
+title: LQ-Blog
+subtitle: "心有灵犀一点通"
+description: "逻千的博客"
 keywords:
-author: John Doe
+author: Brian Luo
 language: zh-CN
 timezone: ""
 
@@ -132,3 +132,5 @@ jsonContent:
 about:
   enable: true
   # image: '/intro/about-page.jpg'
+
+# favicon: source/images/favicon.ico
