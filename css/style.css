@@ -1527,5 +1527,6 @@ em.search-keyword {
   text-shadow: 0; }
 
 code {
-  color: #555;
-  font-size: smaller; }
+  color: rgba(24, 24, 24, 0.863);
+  font-size: smaller !important;
+  background: #eaeaea !important; }
