@@ -949,6 +949,11 @@
   dependencies:
     "function-bind" "^1.1.1"
 
+"hexo-asset-link@^2.1.0":
+  "integrity" "sha512-WhV/woj7NbCdh0AKpgesCpMn7KSC/dL7ul+JEgr0eA6dVSEZJcuzVQ/2A9q6wiRF4tDIMv8PjodFR7G7+x2SSg=="
+  "resolved" "https://registry.npmjs.org/hexo-asset-link/-/hexo-asset-link-2.1.0.tgz"
+  "version" "2.1.0"
+
 "hexo-cli@^4.0.0":
   "integrity" "sha512-NJQYKnD41KUlNZzEyi8wDzPeGhrjwLLTa05dtkwq+lJch+j9idZTh4dgn3w/82o6Q/zygn+ibO1XvihMfFdSfw=="
   "resolved" "https://registry.yarnpkg.com/hexo-cli/-/hexo-cli-4.2.0.tgz"
@@ -1127,7 +1132,7 @@
   "resolved" "https://registry.npmjs.org/hexo-wordcount/-/hexo-wordcount-6.0.1.tgz"
   "version" "6.0.1"
 
-"hexo@^5.0.0", "hexo@>= 3":
+"hexo@^4.0.0 || ^5.0.0", "hexo@^5.0.0", "hexo@>= 3":
   "integrity" "sha512-4vMDle5GjpMeOVrx0NKoTZCqrmpJVg3wNiNNUVjcoFfcpYcMzQUCZHBtQqLl7BzjJ8x2gs002VQ5yv0ZKtj8Jg=="
   "resolved" "https://registry.yarnpkg.com/hexo/-/hexo-5.4.0.tgz"
   "version" "5.4.0"
