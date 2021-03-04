@@ -89,4 +89,9 @@ cp  shell.php  shell.php30   # False
    - Windows: 大小写`不敏感`
    - Linux: 大小写`敏感`
 
-![](web-security-1.png)
+<img src="web-security-1.png" width="50%" />
+
+### 高阶：3种
+- `文件流绕过`，针对 windows 文件流
+- `字符串截断`，当拼接目录时
+- `文件头检测`，(绕过白名单，需要检测文件内容时，注意不要有乱码)
