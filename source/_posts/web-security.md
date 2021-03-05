@@ -89,9 +89,31 @@ cp  shell.php  shell.php30   # False
    - Windows: 大小写`不敏感`
    - Linux: 大小写`敏感`
 
-<img src="web-security-1.png" width="50%" />
+<img src="web-security-1.png" width="40%" />
 
 ### 高阶：3种
 - `文件流绕过`，针对 windows 文件流
 - `字符串截断`，当拼接目录时
 - `文件头检测`，(绕过白名单，需要检测文件内容时，注意不要有乱码)
+
+
+
+## SQL 注入漏洞
+
+是发生于 `应用程序与数据库` 的安全漏洞  
+
+实际情况中，需要结合用户的输入`动态构造SQL语句`，导致此时有SQL注入风险
+
+提交网页时，主要分 GET方法，POST方法
+
+### Web 应用三层架构
+界面层 + 业务逻辑层 + 数据访问层
+
+<img src="web-security-2.png" width="70%" />
+
+
+```
+具体案例
+```
+
+<img src="web-security-3.png" width="70%" />
