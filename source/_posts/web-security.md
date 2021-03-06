@@ -109,11 +109,42 @@ cp  shell.php  shell.php30   # False
 ### Web 应用三层架构
 界面层 + 业务逻辑层 + 数据访问层
 
-<img src="web-security-2.png" width="70%" />
+<img src="web-security-2.png" width="50%" />
 
 
 ```
 具体案例
 ```
 
-<img src="web-security-3.png" width="70%" />
+<img src="web-security-3.png" width="50%" />
+
+
+md5解密网站 [CMD5](https://www.cmd5.com/)
+
+
+
+# Web 前端安全
+
+## XSS 跨站脚本攻击
+主要分了 3 个类型
+- 反射型
+- 储存型
+- DOM型
+
+危害
+- 盗取cookie，盗取账户，恶意软件下载，键盘记录，广告引流
+
+### 反射型
+`未经转义的用户输入`：非持久化，需要用户点击
+
+使用 bWAPP 进行 XSS 练习
+
+诱导用户跳转
+```html
+<script> alert('test'); location.href="https://www.baidu.com"</script>
+
+// 闭合 <p> 标签
+</p> <script> alert('test')</script> <p>
+```
+
+使用软件 `BeEF` 进行 xss
