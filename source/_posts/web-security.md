@@ -163,3 +163,38 @@ Mutated Xss - 突变 Xss
 与浏览器紧密相关，难度高
 
 
+## 伪协议 与 编码绕过
+`伪协议`不同于因特网上所广泛使用的如 `http://,https://,ftp://`，在 URL 中使用，用于执行特
+定的功能：
+- Data 伪协议：
+  - data:text/html;base64, PHNjcmlwdD5hbGVydCgxKTs8L3NjcmlwdD4=
+- JavaScript 伪协议 ：
+  - javascript:alert("1")
+
+
+### 编码绕过
+ISO （国际标谁化组织）制定的包括了地球上所有文化、所有字母和符号的编码，使用两个字节表示一个字符，
+
+`Unicode` 只是一个符号集，它只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。
+
+具体存储由：`UTF-8`，`UTF-16`等实现。
+
+解析一篇 HTML 文档时主要有三个处理过程：HTML解析，URL解析 和 JavaScript解析
+
+```
+- HTML编码: &x116
+- URL编码: %74
+- Javascript编码（等同于Unicode编码）: &#x0074, \u0074
+
+例子为字母 t 的3种形式编码下的样子
+
+`顺序： HTML > URL > Javascript`
+```
+
+演示示例：
+- HTML解码
+- URL解码
+- JS解码
+- 二层混淆解码
+- 三层混淆解码：对 alert(1) 中的 r，先进行`js编码`，后`url编码`，最后`html编码`。顺序刚好和`解码顺序相反`
+
