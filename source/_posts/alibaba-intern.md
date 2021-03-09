@@ -1,7 +1,8 @@
 ---
 title: 阿里淘系 intern offer 后的小总结
-date: "2020-4-1"
-description: "我是如何从零基础到淘系前端offer --- 阶段性总结"
+date: 2020-04-01
+description: 
+  我是如何从零基础到淘系前端offer --- 阶段性总结这是我阶段性总结
 toc: true
 tags: 
 category: techology

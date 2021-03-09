@@ -164,6 +164,7 @@ Mutated Xss - 突变 Xss
 
 
 ## 伪协议 与 编码绕过
+### 伪协议
 `伪协议`不同于因特网上所广泛使用的如 `http://,https://,ftp://`，在 URL 中使用，用于执行特
 定的功能：
 - Data 伪协议：
@@ -198,3 +199,18 @@ ISO （国际标谁化组织）制定的包括了地球上所有文化、所有�
 - 二层混淆解码
 - 三层混淆解码：对 alert(1) 中的 r，先进行`js编码`，后`url编码`，最后`html编码`。顺序刚好和`解码顺序相反`
 
+
+## CSRF
+
+**同源协议** 
+- (协议、主机、端口)  
+- 如果两个 URL 的协议、主机、端口都相同，则认为这两个 URL 同源  
+
+分为 Cookie 和 DOM 来讨论
+
+### Cookie 和 DOM 的区别
+
+- Cookie
+  - 父/子域名之间`原则上`也无法获取Cookie，但是可以设置 Cookie 内的 `domain=example.com` 参数，使得 `a.example.com` + `b.example.com` 可以相互访问 cookie
+- DOM
+  - 父/子域名之间可以操作DOM
