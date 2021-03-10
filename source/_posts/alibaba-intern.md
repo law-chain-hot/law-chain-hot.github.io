@@ -2,7 +2,10 @@
 title: 阿里淘系 intern offer 后的小总结
 date: 2020-04-01
 description: 
-  我是如何从零基础到淘系前端offer --- 阶段性总结这是我阶段性总结
+  我是如何从零基础到淘系前端offer，这是我阶段性总结。 
+  即使一年后再来看这篇总结，也是挺有意思的事。
+  唯一的遗憾是因为疫情没能回来参加实习吧
+  
 toc: true
 tags: 
 category: techology
