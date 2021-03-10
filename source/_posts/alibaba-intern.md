@@ -8,7 +8,7 @@ description:
   
 toc: true
 tags: 
-category: techology
+category: technology
 ---
 
 > 原标题 《我是如何从零基础到淘系前端offer --- 阶段性总结》

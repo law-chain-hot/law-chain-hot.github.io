@@ -4,7 +4,7 @@ date: "2021-3-1"
 description: "极客时间的 `web网络安全攻防实战` 课程记录"
 toc: true
 tags: 
-category: techology
+category: technology
 ---
 
 极客时间的 **web网络安全攻防实战** 课程记录

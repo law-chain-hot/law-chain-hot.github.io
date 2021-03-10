@@ -6,7 +6,7 @@ description:
     补充了我的 networking 知识
 toc:
 tags:
-category: techology
+category: technology
 ---
 
 <img src="xmind.jpg" width="100%" />
