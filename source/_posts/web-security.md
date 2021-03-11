@@ -12,11 +12,11 @@ category: technology
 web 安全的根本性原因是 `前端输入不可信`
 
 # 常用的工具
-- **Burp-Suite**: Burp Suite Professional is one of the most popular penetration testing and vulnerability finder tools
-- **cURL**: 系统自带
-- **Postman**: GUI式cURL
-- **Wappalyzer**: 网站技术栈分析
-- **HackBar**: web安全工具插件
+- **`Burp-Suite`**: Burp Suite Professional is one of the most popular penetration testing and vulnerability finder tools
+- **`cURL`**: 系统自带
+- **`Postman`**: GUI式cURL
+- **`Wappalyzer`**: 网站技术栈分析
+- **`HackBar`**: web安全工具插件
 
 
 # Web 后端安全
@@ -214,3 +214,15 @@ ISO （国际标谁化组织）制定的包括了地球上所有文化、所有�
   - 父/子域名之间`原则上`也无法获取Cookie，但是可以设置 Cookie 内的 `domain=example.com` 参数，使得 `a.example.com` + `b.example.com` 可以相互访问 cookie
 - DOM
   - 父/子域名之间可以操作DOM
+
+
+## CORS安全性
+由于同源策略，跨域请求会被浏览器拦截（但是可以被`burp`抓包，同源策略是`浏览器端的限制`）
+
+>**同源策略**（Same origin policy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。
+
+调整 Requst header 里的 `Access-Control-Allow-Origin: *` （表示允许所有源的请求）
+
+```
+安全性很差：因为它只通过 Http 里面的头信息进行判断
+```

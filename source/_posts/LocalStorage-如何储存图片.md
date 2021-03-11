@@ -1,7 +1,7 @@
 ---
 title: LocalStorage 如何储存图片
 date: 2021-03-10 11:34:22
-description:
+description: 有两个难点，在这里会被一一解释
 toc: true
 tags:
 category: technology
@@ -40,10 +40,16 @@ function getBase64Image(img) {
     var ctx = canvas.getContext("2d");
     ctx.drawImage(img, 0, 0);
 
-    var dataURL = canvas.toDataURL("image/png");
+    var dataURL = canvas.toDataURL("image/png"); // ! important
 
     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
+
+
+// get base64 from localstorage
+var dataImage = localStorage.getItem('imgData');
+bannerImg = document.getElementById('tableBanner');
+bannerImg.src = "data:image/png;base64," + dataImage;
 ```
 
 ---
@@ -61,5 +67,5 @@ function getBase64Image(img) {
 
 
 # 参考资料
-1. [html5本地存储图片方法](https://www.haorooms.com/post/html5_storageimage)
-2. [How to save an image to localStorage and display it on the next page?](https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page)
+1. [Html5本地存储图片方法](https://www.haorooms.com/post/html5_storageimage)
+2. ["javascript - How to save an image to localStorage and display it on the next page? - Stack Overflow"](https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page)
