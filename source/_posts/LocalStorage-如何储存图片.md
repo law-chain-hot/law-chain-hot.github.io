@@ -7,7 +7,7 @@ tags:
 category: technology
 ---
 
-# 问题难点
+# 一、问题难点
 
 - 难点1：Localstorage 只能存储字符串，不能储存二进制图片  
 解决办法：储存 `base64` 编码的图片
@@ -20,7 +20,7 @@ category: technology
 ```
 
 
-# 解决思路
+# 二、解决思路
 ```js
 // img -> convertImgToBase64(img) -> store base64
 
@@ -53,7 +53,7 @@ bannerImg.src = "data:image/png;base64," + dataImage;
 ```
 
 ---
-# 代码展示：例子
+# 三、代码展示：例子
 ```html
 <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
     AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
@@ -66,6 +66,6 @@ bannerImg.src = "data:image/png;base64," + dataImage;
 👆 上面这个小红点便是上方代码的结果
 
 
-# 参考资料
+# 四、参考资料
 1. [Html5本地存储图片方法](https://www.haorooms.com/post/html5_storageimage)
 2. ["javascript - How to save an image to localStorage and display it on the next page? - Stack Overflow"](https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page)
