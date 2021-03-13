@@ -1,6 +1,6 @@
 ---
 title: Web网络安全 - 极客时间 (Updating)
-date: "2021-3-1"
+date: "2021-3-13"
 description: "极客时间的 `web网络安全攻防实战` 课程记录"
 toc: true
 tags: 
@@ -11,7 +11,7 @@ category: technology
 
 web 安全的根本性原因是 `前端输入不可信`
 
-# 常用的工具
+# 一、常用的工具
 - **`Burp-Suite`**: Burp Suite Professional is one of the most popular penetration testing and vulnerability finder tools
 - **`cURL`**: 系统自带
 - **`Postman`**: GUI式cURL
@@ -19,7 +19,7 @@ web 安全的根本性原因是 `前端输入不可信`
 - **`HackBar`**: web安全工具插件
 
 
-# Web 后端安全
+# 二、Web 后端安全
 
 ## 文件上传漏洞
 举个例子，后端服务器若为 `PHP`，那么可以上传一个 `shell.php` 文件，里面包含
@@ -123,7 +123,7 @@ md5解密网站 [CMD5](https://www.cmd5.com/)
 
 
 
-# Web 前端安全
+# 三、Web 前端安全
 
 ## XSS 跨站脚本攻击
 主要分了 3 个`类`型 过数据库，`反射型` 不过数据库
@@ -226,3 +226,26 @@ ISO （国际标谁化组织）制定的包括了地球上所有文化、所有�
 ```
 安全性很差：因为它只通过 Http 里面的头信息进行判断
 ```
+
+# 四、Node.js 安全专题
+
+## 常见问题
+- 不使用废弃的包或者版本
+- 检测使用的包的安全问题
+  - npm audit
+  - NSP
+  - Snyk
+- 使用严格模式
+- 使用类似 Helmet 的模块
+- 谨慎使用 cookie
+- 验证用户输入
+- 避免使用 eval 函数
+- 确保正则安全
+- 正确处理报错
+  - 在生产环境，要处理好错误，避免将错误堆栈信息等敏感信息输出给外部用户。
+
+## Node.js 漏洞审计关注点
+<img src="web-security-4.png" width="80%" />
+
+## 附：项目目录常见结构
+<img src="web-security-5.png" width="80%" />
