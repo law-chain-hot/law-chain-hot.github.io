@@ -1,5 +1,5 @@
 ---
-title: "Sleep Sort的思考\U0001F914(SetTimeout的应用)"
+title: "Sleep Sort的思考\U0001F914"
 date: 2021-03-15 15:10:33
 description: 
     用 JS 实现 sort 的方法很多。其中有一个非常有趣的sort类型，sleep sort，原理是基于 SetTimeout 的计时功能，达到延时输入的目的。
