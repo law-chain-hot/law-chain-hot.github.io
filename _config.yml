@@ -97,8 +97,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-## Others: landscape, archer, maupassant
-theme: maupassant
+## Others: landscape, archer, maupassant, law-chain-hot
+theme: law-chain-hot
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -133,4 +133,6 @@ about:
   enable: true
   # image: '/intro/about-page.jpg'
 
-# favicon: source/images/favicon.ico
+
+theme_config:
+  favicon: source/images/favicon.ico

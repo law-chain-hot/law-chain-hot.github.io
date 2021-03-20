@@ -6,7 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo generate && hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "update": "rm -rf themes/law-chain-hot; git clone https://github.com/law-chain-hot/maupassant-hexo.git themes/law-chain-hot"
   },
   "hexo": {
     "version": "5.4.0"
