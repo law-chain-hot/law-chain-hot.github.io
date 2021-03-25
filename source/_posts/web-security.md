@@ -1,5 +1,5 @@
 ---
-title: Web网络安全 - 极客时间 (Updating)
+title: Web网络安全 - 极客时间
 date: "2021-3-13"
 description: "极客时间的 `web网络安全攻防实战` 课程记录"
 toc: true
