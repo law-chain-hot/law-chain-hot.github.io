@@ -134,3 +134,10 @@ toc: true
 3. 想好了如何处理 Tab ，每个 Tab 都需要保存一个状态
 4. 定下了不加班约定
 
+
+周三，4月14日
+1. 运动：*9417步* 😁
+2. 虽然没有早回家，但是意识到了问题
+3. 对 Functional React Component 有更深的理解了，Class 和 Function 要共用
+
+
