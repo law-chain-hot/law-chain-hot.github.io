@@ -238,6 +238,7 @@ div {
     .post .post-content pre code {
       padding: 0 2em; }
     .post .post-content p {
+      margin: 1.5em 0 0.1em !important;
       word-break: break-word;
       overflow-wrap: break-word; }
       .post .post-content p code {
